@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading Screen</title>
+    <style>
+        body{
+            background: skyblue;
+            font-family: sans-serif;
+        }
+        .container{
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            /* background: pink; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            margin: 400px auto 0;
+
+        }
+        .container .circle{
+            /* background: black; */
+            width: 70px;
+            height: 70px;
+            border:  solid 10px skyblue;
+            border-top: solid 10px white;
+            /* margin: 400px auto 0; */
+            border-radius: 50%;
+            animation: circle 0.7s infinite linear;
+            
+        }
+        @keyframes circle{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        h2{text-align: center;}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <div class="circle"></div>
+    <h2>Yükleniyor</h2>
+</div>
+    
+</body>
+</html>
